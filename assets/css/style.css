@@ -272,11 +272,15 @@ css area especifica
     background-color: rgba(0,0,0,0.5);
     width: inherit;
     height: inherit;
-    display: none;
+    display: flex;
+    opacity: 0;
     justify-content: center;
     align-items: center;
     color: #ffffff;
     flex-direction: column;
+    transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
 
 }
 .section-projects--photoinfo h5{
@@ -284,7 +288,7 @@ css area especifica
     font-weight: 600;
 }
 .section-projects--photoarea:hover .section-projects--photoinfo{
-    display: flex;
+    opacity: 1;
 }
 .bg-team{
     background-image: url('../images/bg.jpg');
@@ -599,6 +603,11 @@ css area especifica
 }
 .section-premium .pointer.active {
     background-color:#B28756;
+}
+.section-premium--button{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
 }
 .section-facts {
     display:flex;
